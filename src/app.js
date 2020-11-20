@@ -36,7 +36,7 @@ app.get("/files/:animationFileName", (req, res) => {
     animationIdName = animationIdName.join("-");
 
     // MAKING POST REQUEST TO ADD USE TO ANIMATION
-    fetch(`http://anojs.com/app/add-use-to-animation?animationIdName=${animationIdName}`, {
+    fetch(`https://anojs.com/api/add-use-to-animation?animationIdName=${animationIdName}`, {
       method: "POST"
     });
 
